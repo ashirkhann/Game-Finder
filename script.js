@@ -27,7 +27,7 @@ let games = [];
 
 const fetchGames = async () => {
   try {
-    const response = await fetch('http://127.0.0.1:5500/gamesData.json');
+    const response = await fetch('./gamesData.json');
     const gameData = await response.json();
     games.push(gameData); 
     createGameCards(gameData);
