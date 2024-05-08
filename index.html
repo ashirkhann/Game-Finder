@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Finder</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/lWi9ZxbA_GmS91t_-Q60OmFTLa_X79aKvwCyfr4OI7biineW06npxdcM7vaJlyVzvTZL=w240-h480-rw" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <i id="closeSidebar" class="ri-close-line"></i>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <!-- <a href="./category.html">
+                    <li>Categories</li>
+                </a> -->
+            </ul>
+            <ul>
+                <a href="https://facebook.com"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://github.com/ashirkhann"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/ashirkhann/"><i class="ri-linkedin-box-fill"></i></a>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <div class="left">
+                    <i id="openSidebar" class="ri-menu-3-fill"></i>
+                </div>
+                <div class="right">
+                    <input type="text" id="searchInput" placeholder="Search for games...">
+                    <i class="ri-search-line"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="dropdown">
+                    <select id="categorySelect">
+                        <option value="all">All</option>
+                        <option value="Fighting">Fighting</option>
+                        <option value="Racing">Racing</option>
+                        <option value="Battle">Battle</option>
+                        <option value="MOBA">MOBA</option>
+                        <option value="RPG">RPG</option>
+                    </select>
+                </div>
+                
+
+                <div class="cards">
+                    <!-- card will be added thorugh script.js -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
